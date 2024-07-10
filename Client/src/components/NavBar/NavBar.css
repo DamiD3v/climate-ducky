@@ -1,0 +1,129 @@
+.navBar-header-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: x-large;
+}
+
+.container {
+    background-color: #0C1627;
+    font-size: x-large;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 10;
+    height: 4rem;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+
+@media (prefers-color-scheme: light) {
+    .navBar-logo-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+        padding: 2px 20px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .navBar-logo {
+        width: 8vh;
+        margin-left: 2vw;
+    }
+
+    .navBar-header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 12px;
+        color: whitesmoke;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-size: xx-large;
+    }
+
+    .navBar-links {
+        text-decoration: none;
+        font-weight: 100;
+        color: whitesmoke;
+        margin-right: 3vw;
+    }
+
+    .navBar-links:hover {
+        color: rgb(255, 152, 42);
+    }
+
+    .navBar-header-about {
+        margin: 0px;
+        color: whitesmoke;
+        font-weight: 100;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .navBar-logo-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+        padding: 2px 20px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+/*     .navBar-logo {
+        width: 4rem;
+        margin-left: 2vw;
+    } */
+
+    .navBarIcon {
+        aspect-ratio: 1/1;
+        background-size: cover;
+        width: 6rem;
+        height: 100%;
+        background-image: url('/duckIconLakeDark.svg');
+    }
+
+    .navBar-header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 12px;
+        color: whitesmoke;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-size: xx-large;
+    }
+
+    .navBar-links {
+        text-decoration: none;
+        font-weight: 100;
+        color: whitesmoke;
+        margin-right: 3vw;
+    }
+
+    .navBar-links:hover {
+        color: rgb(255, 152, 42);
+    }
+
+    .navBar-header-about {
+        margin: 0px;
+        color: whitesmoke;
+        font-weight: 100;
+    }
+
+}

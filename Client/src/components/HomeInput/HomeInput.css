@@ -1,0 +1,127 @@
+:root {
+    /* Definición de variables CSS para el tema claro */
+    --lightHeaderColor: rgb(64, 64, 64);
+    --lightBackgroundColor: rgb(241, 241, 241);
+
+    /* Definición de variables CSS para el tema oscuro */
+    --darkBackgroundColor: rgb(40, 40, 40);
+    --darkHeaderColor: rgb(255, 145, 0);
+}
+
+
+
+/* #region Estilos neutrales */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 18vh;
+}
+
+.home-input {
+    height: auto;
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 10vh;
+    padding-top: 0vh;
+    padding-bottom: 7.3vh;
+}
+
+.home-searchBar-container {
+    margin-top: 16vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-searchBar-legend {
+    color: gray;
+    font-weight: 200;
+}
+
+/* #endregion */
+
+
+/* #region Tema claro */
+/* Estilos adicionales para el tema claro */
+@media (prefers-color-scheme: light) {
+    .home-title {
+        color: rgb(235, 235, 235);
+        font-weight: 100;
+        font-size: 580%;
+        margin: 0px;
+        /* Color del encabezado en tema oscuro */
+    }
+
+    .home-subtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(214, 214, 214);
+        font-size: larger;
+        font-weight: 200;
+        width: 70%;
+        /* Color del texto en tema oscuro */
+    }
+}
+
+/* #endregion */
+/* ------------------------------------------------------------------------------------------------- */
+/* #region Tema oscuro */
+/* Estilos adicionales para el tema oscuro */
+@media (prefers-color-scheme: dark) {
+    .home-title {
+        color: rgb(235, 235, 235);
+        font-weight: 100;
+        font-size: 580%;
+        margin: 0px;
+        /* Color del encabezado en tema oscuro */
+    }
+
+    .home-subtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(214, 214, 214);
+        font-size: larger;
+        font-weight: 200;
+        width: 70%;
+        /* Color del texto en tema oscuro */
+    }
+
+}
+
+@media screen and (max-width: 1188px) {
+    .home-title {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 891px) {
+    .home-title {
+        font-size: 250%;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    .home-title {
+        display: none;
+    }
+
+    .home-subtitle {
+        display: none;
+    }
+
+    .home-container .home-card {
+        width: 195px;
+    }
+}
+
+/* #endregion */
