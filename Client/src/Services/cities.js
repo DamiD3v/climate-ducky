@@ -1,9 +1,10 @@
 import axios from 'axios';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+
 export const getCityWeather = async (city) => {
     try {
-        /* const { data } = await axios.get(`https://weather-app-api-mu.vercel.app/weather/${city}`); */
-        const { data } = await axios.get(`http://localhost:3001/weather/${city}`);
+        const { data } = await axios.get(`${API_URL}/weather/${city}`);
         return data;
     } catch (error) {
         console.error(`Error fetching weather data for ${city}:`, error);
