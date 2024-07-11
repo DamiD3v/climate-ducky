@@ -5,7 +5,7 @@ import cityWeather from './routes/cityWeather.js'
 const app = express();
 
 app.use(cors());
-app.use('/weather', cityWeather);
+app.use('/api/weather', cityWeather);
 
 
 const port = process.env.PORT || 3001;
