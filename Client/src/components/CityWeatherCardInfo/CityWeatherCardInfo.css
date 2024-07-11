@@ -1,0 +1,107 @@
+.weather-card-container {
+    padding: 20px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    width: auto;
+    height: fit-content;
+}
+
+.weather-card-name-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8vh;
+}
+
+.weatherCityName {
+    font-size: xx-large;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.weatherInfo-icon {
+    aspect-ratio: 1/1;
+    height: 7vh;
+}
+
+.windFlagIcon {
+    aspect-ratio: 1/1;
+    height: 3vh;
+    margin-left: 15px;
+}
+
+.weatherInfo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.weatherInfo-container-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.weatherInfo-title {
+    display: flex;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.weatherInfo {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+strong {
+    color: #333;
+}
+
+/* .weather-card-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} */
+
+/* Light Theme */
+@media (prefers-color-scheme: light) {
+    .weather-card-container {
+        background-color: #f7f7f7;
+    }
+
+    .weather-card-name {
+        color: #333;
+    }
+
+    .weather-card-temperature,
+    .weather-card-wind {
+        color: #666;
+    }
+
+    strong {
+        color: #333;
+    }
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+
+    .weather-card-name {
+        color: #fff;
+    }
+
+    .weather-card-temperature,
+    .weather-card-wind {
+        color: #aaa;
+    }
+
+    strong {
+        color: #fff;
+    }
+}

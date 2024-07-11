@@ -1,0 +1,54 @@
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+}
+
+.input-box {
+    font-size: 3vh;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #cccccc68;
+    color: rgba(233, 233, 233, 0.916);
+    width: 100%;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-box:focus {
+    border-color: #49b3e0;
+    outline: none;
+}
+
+.input-button {
+    position: absolute;
+    right: 0;
+    background-color: transparent;    
+    padding: 0px;
+}
+
+.input-search-icon {
+    width: 5vh;
+    margin-top: 1vh;
+}
+
+@media screen and (max-width: 742px) {
+    .input-form {
+        padding: 0px;
+    }
+    .input-wrapper {
+        min-height: max-content;
+        min-width: max-content;
+    }
+
+    .input-box {
+        min-width: max-content;
+    }
+}

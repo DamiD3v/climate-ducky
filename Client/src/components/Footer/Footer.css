@@ -1,0 +1,13 @@
+p {
+    margin: 0px;
+}
+
+.footer-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(11, 21, 39);
+    padding: 20px 0px;
+    color: white;
+    border-top: 2px solid rgb(15, 25, 44);
+}
