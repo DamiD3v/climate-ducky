@@ -5,7 +5,7 @@
   /* #region Fuentes */
   @font-face {
     font-family: 'Inter';
-    src: local('Inter'), url(./fonts/Inter-VariableFont_slnt\,wght.ttf), format('truetype');
+    src: local('Inter'), url(./fonts/Inter-VariableFont_slnt,wght.ttf), format('truetype');
   }
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   line-height: 1.5;
