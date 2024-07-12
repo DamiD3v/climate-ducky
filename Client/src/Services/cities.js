@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 /* const LOCAL_URL = 'http://localhost:3001'; */
-const API_URL = 'https://climate-hub-theta.vercel.app'
+const API_URL = 'https://climate-hub-api.vercel.app'
 
 export const getCityWeather = async (city) => {
     try {
