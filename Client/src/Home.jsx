@@ -11,6 +11,7 @@ import './Home.css';
 
 const Home = () => {
   const [city, setCity] = useState('');
+  
   const { data, isLoading, error, refetch, isRefetching } = useQuery({
     queryKey: ['cityWeather', city],
     queryFn: async () => {
