@@ -18,7 +18,7 @@ const Searchbar = ({ onSearch }) => {
     return (
         <>
             <div className="input-wrapper">
-                <form onSubmit={handleSubmit} className="input-form">
+                <form onSubmit={handleSubmit} className="input-form" name="citySearcher">
                     <input
                         className="input-box"
                         type="text"
