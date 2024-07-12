@@ -17,8 +17,6 @@ const Home = () => {
     queryFn: async () => {
       return getCityWeather(city);
     },
-    retry: true,
-    retryDelay: 1000,
     enabled: !!city,
   });
 
