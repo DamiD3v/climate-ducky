@@ -26,7 +26,7 @@ const NavBar = () => {
       >
         <div className='navBarIcon'></div>
         {/* <img className='navBar-logo' src={DuckIconLakeDark} alt="Climate Hub icon" /> */}
-        <h2 className='navBar-header-text'>Climate Hub</h2>
+        <h2 className='navBar-header-text'>Climate-Duck</h2>
       </Link>
     </div>
   );
