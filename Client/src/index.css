@@ -1,12 +1,14 @@
 :root {
   /* #region Theme color scheme */
   color-scheme: light dark;
+
   /* #endregion */
   /* #region Fuentes */
   @font-face {
     font-family: 'Inter';
-    src: local('Inter'), url(./fonts/Inter-VariableFont_slnt,wght.ttf), format('truetype');
+    src: local('Inter'), url(./fonts/Inter-VariableFont_slnt,wght.ttf), format('woff2-variations');
   }
+
   font-family: 'Inter';
   line-height: 1.5;
   /* Desactiva la síntesis de fuentes, evitando que el navegador combine negritas o itálicas si no están disponibles. */
