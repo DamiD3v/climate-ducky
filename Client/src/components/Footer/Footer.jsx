@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="footer-container">
-            <p>Climate Duck</p>
+            <p>Climate Ducky</p>
         </div>
     )
 }
