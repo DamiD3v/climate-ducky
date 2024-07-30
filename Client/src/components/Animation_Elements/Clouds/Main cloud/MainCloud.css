@@ -1,0 +1,9 @@
+.main-cloud-container {
+    position: relative;
+}
+
+.main-cloud {
+    aspect-ratio: 3/4;
+    position: relative;
+    width: 250px;
+}

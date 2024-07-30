@@ -1,13 +1,88 @@
 /* Dark theme */
+
 .home-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: fit-content;
-    width: 100%;
-    background-color: #080c15;
-    margin-top: 0vh;
-    padding-bottom: 12vh;
+    background-color: #5BCEFF;
+    aspect-ratio: 9/16;
+    height: 100%;
+}
+
+.home-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 80%;
+    min-width: 80%;
+}
+
+.header-upperElements-grid-container {
+    position: static;
+    height: min-content;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
+    gap: 3.5vw;
+}
+
+
+
+.home-main-title {
+    aspect-ratio: auto;
+    display: flex;
+    position: static;
+    width: 30vw;
+}
+
+.home-left-cloud-container {
+    aspect-ratio: auto;
+    display: flex;
+    position: static;
+}
+
+.home-right-cloud-container {
+    aspect-ratio: auto;
+    display: flex;
+    position: static;
+}
+
+.rightCloud {
+    aspect-ratio: auto;
+    width: 18vw;
+    position: static;
+}
+
+.rightieCloud {
+    aspect-ratio: auto;
+    position: static;
+    width: 8vw;
+    padding-bottom: 1vw;
+}
+
+.leftCloud {
+    aspect-ratio: auto;
+    width: 17vw;
+
+}
+
+.leftieCloud {
+    aspect-ratio: auto;
+    width: 8vw;
+    padding-bottom: 6qvw;
+}
+
+.home-main-cloud-container {
+    aspect-ratio: auto;
+}
+
+.main-cloud {
+    aspect-ratio: auto;
+    position: static;
+    overflow: hidden;
+    width: 20vw;
 }
 
 .home-weather-container {

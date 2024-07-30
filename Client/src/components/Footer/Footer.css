@@ -4,7 +4,7 @@ p {
 
 .footer-container {
     position: relative;
-    display: flex;
+    display: none;
     justify-content: center;
     background-color: rgb(11, 21, 39);
     padding: 20px 0px;

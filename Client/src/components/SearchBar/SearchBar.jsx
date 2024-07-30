@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SearchIcon from '../../assets/ClimateHubSearchIcon.svg'
-import './SearchBar.css';
+import './newSearchBar.css';
 
 const Searchbar = ({ onSearch }) => {
     const [query, setQuery] = useState('');
@@ -19,23 +19,34 @@ const Searchbar = ({ onSearch }) => {
         <>
             <div className="input-wrapper">
                 <form onSubmit={handleSubmit} className="input-form" name="citySearcher">
-                    <input
+                    <div className="input-wrapper">
+                        <input
+                            type="text"
+                            name="text"
+                            placeholder="Example: New York"
+                            value={query}
+                            onChange={handleChange}
+                        />
+                    </div>
+
+                    {/* <input
                         className="input-box"
                         type="text"
                         placeholder="Example: New York"
                         value={query}
                         onChange={handleChange}
-                    />
-                    <button
+                    /> */}
+                    {/* <button
                         className="input-button"
                         value={query}
                         onClick={handleChange}
 
                     >
                         <img src={SearchIcon} alt="Search Icon" className="input-search-icon" />
-                    </button>
+                    </button> */}
                 </form>
             </div>
+
         </>
     )
 }
