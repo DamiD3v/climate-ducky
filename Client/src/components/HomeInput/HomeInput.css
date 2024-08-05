@@ -11,12 +11,13 @@
 
 
 /* #region Estilos neutrales */
-.home-container {
+.home-input-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: static;
-    margin-top: 40px;
+    margin-top: 2vw;
+    height: min-content;
 }
 
 .home-input {

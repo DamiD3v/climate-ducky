@@ -12,6 +12,8 @@ import HomeInput from './components/HomeInput/HomeInput.jsx';
 import CityWeatherCardInfo from './components/CityWeatherCardInfo/CityWeatherCardInfo.jsx';
 import { UpperClouds } from './components/Animation_Elements/Clouds/Upper clouds/UpperClouds.jsx';
 import { MainCloud } from './components/Animation_Elements/Clouds/Main cloud/MainCloud.jsx'
+import { BottomClouds } from './components/Animation_Elements/Clouds/Bottom clouds/BottomClouds.jsx';
+import { Lake } from './components/Animation_Elements/Lake/Lake.jsx';
 /* Components */
 
 /* Assets */
@@ -24,6 +26,7 @@ import { getCityWeather } from "./Services/cities.js";
 
 /* Styles */
 import './Home.css';
+
 /* Styles */
 
 const Home = () => {
@@ -69,7 +72,7 @@ const Home = () => {
   }, [data])
 
   return (
-    <div>
+    <div className='background-container'>
       {/* Navigation bar */}
       {/* <NavBar /> */}
 
@@ -184,6 +187,13 @@ const Home = () => {
 
           {/* City search bar */}
           <HomeInput onCityChange={handleCityChange} />
+          {data && <button className='scrollArrow-button' onClick={handleScrollArrow}><img className='scrollArrow-image' src={ArrowImage} alt='Scroll Down Arrow' /></button>}
+
+          {/* Bottom clouds */}
+          <BottomClouds />
+
+          {/* Bottom lake */}
+          {/* <Lake /> */}
 
           {/* City weather card */}
           <div className='home-weather-container'>
@@ -191,7 +201,6 @@ const Home = () => {
               <div>Loading...</div>
             ) : (
               <React.Fragment>
-                {data && <button className='scrollArrow-button' onClick={handleScrollArrow}><img className='scrollArrow-image' src={ArrowImage} alt='Scroll Down Arrow' /></button>}
                 {data && <CityWeatherCardInfo data={data} />}
                 {data && <button className='home-refreshButton' onClick={handleRefresh}>Refresh city data</button>}
               </React.Fragment>

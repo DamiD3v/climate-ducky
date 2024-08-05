@@ -8,7 +8,7 @@ const HomeInput = ({ onCityChange }) => {
     };
 
     return (
-        <div className="home-container">
+        <div className="home-input-container">
             <div className="home-input">
                 {/* <h3 className="home-subtitle">"Instantly check any city's weather information."</h3> */}
                 <div className="home-searchBar-container">

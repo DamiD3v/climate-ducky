@@ -4,9 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5BCEFF;
     aspect-ratio: 9/16;
     height: 100%;
+    background-image: url('/Landscapes/Climate-Ducky-Background-extended-cuttedLake.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home-content-container {
@@ -71,11 +74,12 @@
 .leftieCloud {
     aspect-ratio: auto;
     width: 8vw;
-    padding-bottom: 6qvw;
+    padding-bottom: 6vw;
 }
 
 .home-main-cloud-container {
     aspect-ratio: auto;
+    height: 11vw;
 }
 
 .main-cloud {
@@ -89,7 +93,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6vh;
+    margin-top: 55vh;
     height: fit-content;
     width: 50%;
 }
@@ -99,12 +103,15 @@
 }
 
 .home-refreshButton {
+    margin-top: 0.06vw;
     font-weight: 300;
-    width: 100%;
-    background-color: #0e1425;
+    width: 42.7vw;
+    background-color: rgba(8, 13, 0, 0.852);
 }
 
 .scrollArrow-button {
+    position: absolute;
+    top: 39vw;
     background-color: #00000000;
 }
 

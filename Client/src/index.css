@@ -12,12 +12,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
 }
 
 :root {
   /* #region Theme color scheme */
   color-scheme: light dark;
-
   /* #endregion */
   /* #region Fuentes */
   @font-face {
@@ -129,7 +129,6 @@ body {
 
   /* #region Selectores de pseudo-clase */
   body {
-    background-color: #7b7b7b;
     margin: 0px;
   }
 
