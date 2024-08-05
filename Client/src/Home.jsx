@@ -208,12 +208,12 @@ const Home = () => {
             {error && <div>Error: {error.message}</div>}
           </div>
           {/* End of the city weather card */}
+          {/* Footer */}
+          <Footer />
         </section>
       </header>
       {/* End of the main container */}
 
-      {/* Footer */}
-      <Footer />
     </div >
   );
 }
