@@ -18,13 +18,13 @@ body {
 :root {
   /* #region Theme color scheme */
   color-scheme: light dark;
+
   /* #endregion */
   /* #region Fuentes */
   @font-face {
     font-family: 'Inter';
-    src: local('Inter'), url(./fonts/Inter-VariableFont_slnt\,wght.ttf), format('truetype');
+    src: local('Inter'), url(./fonts/Inter-VariableFont_slnt,wght.ttf), format('woff2-variations');
   }
-
   font-family: 'Inter',
   Arial,
   Helvetica,

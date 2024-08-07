@@ -9,7 +9,7 @@ const About = () => {
         <NavBar />
       </div>
       <div>
-        <h1>Climate Hub</h1>
+        <h1>Climate-Ducky</h1>
         <p>About page</p>
       </div>
     </>

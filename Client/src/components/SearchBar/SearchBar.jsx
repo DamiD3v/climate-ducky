@@ -39,7 +39,7 @@ const Searchbar = ({ onSearch }) => {
                     {/* <button
                         className="input-button"
                         value={query}
-                        onClick={handleChange}
+                        onClick={handleSubmit}
 
                     >
                         <img src={SearchIcon} alt="Search Icon" className="input-search-icon" />

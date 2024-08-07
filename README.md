@@ -1,1 +1,1 @@
-# climate-hub
+# Climate Ducky
