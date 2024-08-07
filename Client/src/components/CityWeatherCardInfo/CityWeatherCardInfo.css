@@ -4,6 +4,7 @@
     border-radius: 10px;
     width: auto;
     height: fit-content;
+    background-color: rgba(8, 13, 0, 0.852);
 }
 
 .weather-card-name-container {

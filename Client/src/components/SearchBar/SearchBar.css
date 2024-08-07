@@ -15,15 +15,15 @@
     font-size: 3vh;
     padding: 5px 0;
     border: none;
-    border-bottom: 2px solid #cccccc68;
-    color: rgba(233, 233, 233, 0.916);
+    /* border-bottom: 2px solid #cccccc68; */
+    color: #000000;
     width: 100%;
     background-color: transparent;
-    transition: border-color 0.3s ease-in-out;
+    /* transition: border-color 0.3s ease-in-out; */
 }
 
 .input-box:focus {
-    border-color: #49b3e0;
+   /*  border-color: #49b3e0; */
     outline: none;
 }
 

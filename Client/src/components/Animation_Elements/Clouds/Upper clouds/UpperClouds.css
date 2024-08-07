@@ -1,0 +1,32 @@
+.upper-clouds-container {
+    position: relative;
+    display: flex;
+}
+
+.left-clouds-container {
+    display: flex;
+}
+
+.leftCloud {
+    position: relative;
+    width: 280px;
+}
+
+.leftieCloud {
+    position: relative;
+    width: 170px;
+}
+
+.right-clouds-container {
+    display: flex;
+}
+
+.rightCloud {
+    position: relative;
+    width: 300px;
+}
+
+.rightieCloud {
+    position: relative;
+    width: 216px;
+}

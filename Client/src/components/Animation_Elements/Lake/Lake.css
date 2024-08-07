@@ -1,0 +1,7 @@
+.lake {
+    display: none;
+    aspect-ratio: auto;
+    position: static;
+    width: 100vw;
+    height: auto;
+}

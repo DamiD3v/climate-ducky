@@ -1,0 +1,11 @@
+.ducky-container {
+    display: flex;
+    position: absolute;
+    top: 18vw;
+    left: 43.5vw;
+    z-index: 2;
+}
+
+.ducky {
+    position: static;
+}

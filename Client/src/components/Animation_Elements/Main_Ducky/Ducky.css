@@ -1,0 +1,50 @@
+/* .main-ducky-complete {
+    stroke: rgb(29, 29, 29);
+    stroke-width: 0.025px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+} */
+
+.ducky-container {
+    display: flex;
+    position: absolute;
+    top: 18vw;
+    left: 43.5vw;
+    z-index: 2;
+}
+
+.ducky {
+    position: static;
+}
+
+.ducky-eye-container {
+    position: static;
+}
+
+.ducky-eye {
+    position: absolute;
+    top: 0.913vw;
+    left: 3.17vw;
+}
+
+.back-wing-container {
+    position: static;
+}
+
+.back-wing {
+    position: absolute;
+    top: 3.6vw;
+    left: 3.3vw;
+    rotate: 13deg;
+}
+
+.front-wing-container {
+    position: static;
+}
+
+.front-wing {
+    position: absolute;
+    top: 3.9vw;
+    left: 3.3vw;
+    rotate: 0deg;
+}

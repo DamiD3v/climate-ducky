@@ -11,28 +11,25 @@
 
 
 /* #region Estilos neutrales */
-.home-container {
+.home-input-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    margin-top: 18vh;
+    position: static;
+    margin-top: 2vw;
+    height: min-content;
 }
 
 .home-input {
     height: auto;
-    width: 42vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 10vh;
-    padding-top: 0vh;
-    padding-bottom: 7.3vh;
 }
 
 .home-searchBar-container {
-    margin-top: 10vh;
-    width: 100%;
+    margin-top: 0px;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
