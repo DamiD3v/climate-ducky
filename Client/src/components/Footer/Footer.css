@@ -12,6 +12,7 @@
 }
 
 .footer-iconTitle-container {
+    margin-top: 1vw;
     display: flex;
     align-items: center;
     margin-left: 4vw;

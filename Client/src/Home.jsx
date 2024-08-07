@@ -1,6 +1,6 @@
 /* Dependencies */
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 import { scroller } from 'react-scroll';
 import { useQuery } from '@tanstack/react-query';
 /* Dependencies */
@@ -14,6 +14,8 @@ import { UpperClouds } from './components/Animation_Elements/Clouds/Upper clouds
 import { MainCloud } from './components/Animation_Elements/Clouds/Main cloud/MainCloud.jsx'
 import { BottomClouds } from './components/Animation_Elements/Clouds/Bottom clouds/BottomClouds.jsx';
 import { Lake } from './components/Animation_Elements/Lake/Lake.jsx';
+import { Ducky } from './components/Animation_Elements/Main_Ducky/Ducky.jsx'
+import { DuckyFlying } from './components/Animation_Elements/ExtraDuckies/DuckyFlying.jsx';
 /* Components */
 
 /* Assets */
@@ -65,7 +67,8 @@ const Home = () => {
     if (data) {
       scroller.scrollTo('cityName', {
         smooth: true,
-        duration: 1000,
+        duration: 1500,
+        delay: 3,
         offset: -60,
       })
     }
@@ -171,6 +174,13 @@ const Home = () => {
           </div>
 
           <div className='home-main-cloud-container'>
+
+            {/* Ducky-noRequest */}
+            {!data ?
+              <Ducky />
+              : null
+            }
+            {/* Main-cloud */}
             <svg className='main-cloud' viewBox="0 0 57 31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_81_6)">
                 <path d="M3.91331 20.733C3.91331 20.733 -0.295143 19.9724 0.0164907 23.2965C0.324145 26.578 4.6313 25.3474 4.6313 25.3474C4.6313 25.3474 6.11186 29.3031 11.1943 30.2694C17.4875 31.4662 20.2186 27.6032 20.2186 27.6032C20.2186 27.6032 21.3465 29.5514 24.423 29.8591C27.4996 30.1667 29.4478 27.7055 29.4478 27.7055C29.4478 27.7055 30.9861 30.5767 36.0108 30.4744C41.0356 30.3717 42.7788 26.1672 42.7788 26.1672C42.7788 26.1672 44.4608 28.4597 47.5986 27.9105C51.6104 27.2084 51.5977 23.501 51.5977 23.501C51.5977 23.501 57.3404 23.501 56.6224 19.7069C55.9044 15.9128 51.3927 17.9637 51.3927 17.9637C51.3927 17.9637 51.7983 12.808 45.8553 10.888C42.2913 9.73661 39.9076 10.9907 39.9076 10.9907C39.9076 10.9907 38.0617 0.53087 27.3969 0.0182457C16.7321 -0.494378 14.6812 9.96506 14.6812 9.96506C14.6812 9.96506 11.6047 8.42679 9.04114 10.7853C6.47762 13.1439 7.2979 15.9128 7.2979 15.9128C7.2979 15.9128 2.47732 16.4258 3.91331 20.733Z" fill="#F5FCFF" />
@@ -198,9 +208,18 @@ const Home = () => {
           {/* City weather card */}
           <div className='home-weather-container'>
             {isLoading || isRefetching ? (
-              <div>Loading...</div>
+              <>
+                <div className="loader"></div>
+                <div className='loading'></div>
+              </>
             ) : (
               <React.Fragment>
+                {data &&
+                  <motion.div>
+                    {/* <DuckyFlying /> */}
+                    <Ducky />
+                  </motion.div>
+                }
                 {data && <CityWeatherCardInfo data={data} />}
                 {data && <button className='home-refreshButton' onClick={handleRefresh}>Refresh city data</button>}
               </React.Fragment>
