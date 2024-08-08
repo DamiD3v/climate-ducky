@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { delay, motion } from 'framer-motion';
 import { scroller } from 'react-scroll';
 import { useQuery } from '@tanstack/react-query';
+import Howler from 'howler';
 /* Dependencies */
 
 /* Components */
@@ -20,6 +21,7 @@ import { DuckyFlying } from './components/Animation_Elements/ExtraDuckies/DuckyF
 
 /* Assets */
 import ArrowImage from './assets/DownArrowImage.svg';
+import DuckyQuack from '../public/Sounds/DuckyQuack.wav'
 /* Assets */
 
 /* Services */
@@ -34,13 +36,33 @@ import './Home.css';
 const Home = () => {
   const [city, setCity] = useState('');
 
+  /*   const { data, isLoading, error, refetch, isRefetching } = useQuery({
+      queryKey: ['cityWeather', city],
+      queryFn: async () => {
+        return getCityWeather(city);
+      },
+      enabled: !!city,
+    }); */
+
   const { data, isLoading, error, refetch, isRefetching } = useQuery({
     queryKey: ['cityWeather', city],
     queryFn: async () => {
-      return getCityWeather(city);
+      return new Promise((resolve) => {
+        setTimeout(async () => {
+          const data = await getCityWeather(city);
+          resolve(data);
+        }, 1000); // 2-second delay
+      });
     },
     enabled: !!city,
   });
+
+  const duckySound = new Howl({
+    src: [DuckyQuack],
+    /* autoplay: true, */
+    loop: false,
+  })
+
 
   const handleCityChange = (value) => {
     setCity(value);
@@ -50,7 +72,7 @@ const Home = () => {
     refetch();
     scroller.scrollTo('cityName', {
       smooth: true,
-      duration: 1000,
+      duration: 4000,
       offset: -60,
     })
   };
@@ -58,21 +80,44 @@ const Home = () => {
   const handleScrollArrow = () => {
     scroller.scrollTo('cityName', {
       smooth: true,
-      duration: 1000,
+      duration: 4000,
       offset: -60,
     })
   }
 
+  
+  const playDuckySound = () => {
+    duckySound.stop(); // Stop any existing playback
+    duckySound.play();
+    duckySound.on('end', () => {
+      setTimeout(() => {
+        playDuckySound(); // Play the sound again after a delay
+      }, 6000); // 5 seconds delay
+    });
+  };
+  
+  useEffect(() => {
+    if (!data) {
+      playDuckySound(); // Play the sound when the component mounts
+    }
+    return () => {
+      duckySound.stop(); // Stop the sound when the component unmounts
+    };
+  }, [data, duckySound]);
+  
+  /* Scroll after fetching effect */
   useEffect(() => {
     if (data) {
       scroller.scrollTo('cityName', {
         smooth: true,
-        duration: 1500,
+        duration: 4000,
         delay: 3,
         offset: -60,
       })
     }
   }, [data])
+
+
 
   return (
     <div className='background-container'>
@@ -221,7 +266,7 @@ const Home = () => {
                   </motion.div>
                 }
                 {data && <CityWeatherCardInfo data={data} />}
-                {data && <button className='home-refreshButton' onClick={handleRefresh}>Refresh city data</button>}
+                {/* {data && <button className='home-refreshButton' onClick={handleRefresh}>Refresh city data</button>} */}
               </React.Fragment>
             )}
             {error && <div>Error: {error.message}</div>}

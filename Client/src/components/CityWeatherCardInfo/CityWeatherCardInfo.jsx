@@ -36,7 +36,6 @@ const CityWeatherCardInfo = ({ data }) => {
                 <h3 className="weatherInfo-title">Weather details</h3>
                 <p className="weatherInfo">{weatherDescription} <img src={`http://openweathermap.org/img/wn/${weatherIcon}@2x.png`} alt="Weather Icon" className="weatherInfo-icon" /></p>
             </div>
-            <br />
             <div className="weatherInfo-container">
                 <h3 className="weatherInfo-title">Wind Speed</h3>
                 <p className="weatherInfo">{windSpeedKmh} km/h <img className="windFlagIcon" src={windFlag} /></p>
