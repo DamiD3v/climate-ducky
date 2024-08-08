@@ -1,10 +1,4 @@
-/* .main-ducky-complete {
-    stroke: rgb(29, 29, 29);
-    stroke-width: 0.025px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-} */
-
+/* #region Ducky body */
 .ducky-container {
     display: flex;
     position: absolute;
@@ -15,8 +9,46 @@
 
 .ducky {
     position: static;
+    z-index: 2;
 }
 
+/* #endregion */
+
+/* #region Ducky tails */
+
+/* #region Ducky tail */
+.ducky-tail-container {
+    position: static;
+    z-index: -1;
+}
+
+.ducky-tail {
+    position: absolute;
+    top: 3.8vw;
+    left: 6.1vw;
+    z-index: -1;
+}
+
+/* #endregion */
+
+/* #region Ducky tip tail */
+.ducky-tip-tail-container {
+    position: static;
+    z-index: -2;
+}
+
+.ducky-tip-tail {
+    position: absolute;
+    top: 3.6vw;
+    left: 8.1vw;
+    z-index: -2;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Ducky eye */
 .ducky-eye-container {
     position: static;
 }
@@ -27,6 +59,11 @@
     left: 3.17vw;
 }
 
+/* #endregion */
+
+/* #region Ducky wings */
+
+/* #region Ducky back wing */
 .back-wing-container {
     position: static;
 }
@@ -38,6 +75,9 @@
     rotate: 13deg;
 }
 
+/* #endregion */
+
+/* #region Ducky front wing */
 .front-wing-container {
     position: static;
 }
@@ -48,3 +88,7 @@
     left: 3.3vw;
     rotate: 0deg;
 }
+
+/* #endregion */
+
+/* #endregion */

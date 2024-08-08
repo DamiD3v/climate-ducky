@@ -95,19 +95,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 55vh;
-    height: fit-content;
-    width: 50%;
+    margin-top: 25vw;
+    height: 30vw;
+    width: 40vw;
 }
 
 .weather-card-container {
-    width: 100%;
+    width: 56vw;
 }
 
 .home-refreshButton {
     margin-top: 0.06vw;
     font-weight: 300;
-    width: 42.7vw;
+    width: 43.9vw;
+    border-radius: 1.1vw;
     background-color: rgba(8, 13, 0, 0.852);
 }
 
