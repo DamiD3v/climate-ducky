@@ -85,17 +85,16 @@ const Home = () => {
     })
   }
 
-  
   const playDuckySound = () => {
     duckySound.stop(); // Stop any existing playback
     duckySound.play();
     duckySound.on('end', () => {
       setTimeout(() => {
         playDuckySound(); // Play the sound again after a delay
-      }, 6000); // 5 seconds delay
+      }, 10000); // 5 seconds delay
     });
   };
-  
+
   useEffect(() => {
     if (!data) {
       playDuckySound(); // Play the sound when the component mounts
@@ -104,7 +103,7 @@ const Home = () => {
       duckySound.stop(); // Stop the sound when the component unmounts
     };
   }, [data, duckySound]);
-  
+
   /* Scroll after fetching effect */
   useEffect(() => {
     if (data) {
