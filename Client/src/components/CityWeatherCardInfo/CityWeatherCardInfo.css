@@ -1,3 +1,78 @@
+/*#region Mobile */
+.mobile-weather-card-container {
+    position: absolute;
+    top: 70rem;
+    left: 10%;
+    width: 80%;
+    height: fit-content;
+    padding: 2vw;
+    margin-top: 7vw;
+    border-radius: 2vw;
+    background-color: rgba(8, 13, 0, 0.852);
+}
+
+.mobile-weather-card-name-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.mobile-weatherCityName {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.mobile-weatherInfo-icon {
+    aspect-ratio: 1/1;
+    padding-top: 0.2vw;
+    height: 3.8vw;
+}
+
+.mobile-windFlagIcon {
+    aspect-ratio: 1/1;
+    height: 1.6vw;
+    margin-left: 1vw;
+}
+
+.mobile-weatherInfo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.mobile-weatherInfo-container-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.mobile-weatherInfo-title {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.mobile-weatherInfo {
+    display: flex;
+    align-items: center;
+    margin: 0vw;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+strong {
+    color: #333;
+}
+
+/* #endregion */
+/*#region Desktop */
 .weather-card-container {
     padding: 2vw;
     margin-top: 7vw;
@@ -31,7 +106,7 @@
     margin-left: 1vw;
 }
 
-.weatherInfo-container{
+.weatherInfo-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,43 +140,4 @@ strong {
     color: #333;
 }
 
-/* .weather-card-container:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-} */
-
-/* Light Theme */
-@media (prefers-color-scheme: light) {
-    .weather-card-container {
-        background-color: #f7f7f7;
-    }
-
-    .weather-card-name {
-        color: #333;
-    }
-
-    .weather-card-temperature,
-    .weather-card-wind {
-        color: #666;
-    }
-
-    strong {
-        color: #333;
-    }
-}
-
-/* Dark Theme */
-@media (prefers-color-scheme: dark) {
-
-    .weather-card-name {
-        color: #fff;
-    }
-
-    .weather-card-temperature,
-    .weather-card-wind {
-        color: #aaa;
-    }
-
-    strong {
-        color: #fff;
-    }
-}
+/* #endregion */
