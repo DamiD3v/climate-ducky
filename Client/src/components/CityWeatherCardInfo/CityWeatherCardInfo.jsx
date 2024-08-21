@@ -20,7 +20,7 @@ const CityWeatherCardInfo = ({ data }) => {
     return (
         <div className="weather-card-container">
             <div className="weather-card-name-container">
-                <Element name="cityName">
+                <Element name="mobile-cityName">
                     <h2 className="weatherCityName">{name}</h2>
                 </Element>
             </div>

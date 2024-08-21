@@ -8,8 +8,6 @@
     --darkHeaderColor: rgb(255, 145, 0);
 }
 
-
-
 /* #region Estilos neutrales */
 .home-input-container {
     display: flex;
@@ -40,6 +38,26 @@
     color: gray;
     font-weight: 200;
     font-size: 1em;
+}
+
+.home-title {
+    font-size: 4em;
+    font-family: 'Inter';
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.home-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(214, 214, 214);
+    font-size: 1em;
+    font-weight: 200;
+    /* Color del texto en tema oscuro */
 }
 
 /* #endregion */
@@ -74,6 +92,7 @@
 /* #region Tema oscuro */
 /* Estilos adicionales para el tema oscuro */
 @media (prefers-color-scheme: dark) {
+
     /* .home-title {
         color: rgb(235, 235, 235);
         font-weight: 100;
@@ -101,6 +120,144 @@
         /* Color del texto en tema oscuro */
     }
 
+}
+
+/* #endregion */
+
+/*#region Nuevo css por media queries */
+
+/* Mobile */
+@media (max-width: 424px) {
+    /*#region Laptop display none */
+    .home-input-container {
+        display: none;
+    }
+    /* #endregion */
+
+    /* Mobile styles */
+    .mobile-home-input-container {
+        display: flex;
+    }
+
+    .mobile-home-input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        margin-top: 2vw;
+        height: min-content;
+    }
+
+    .mobile-home-input {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-home-searchBar-container {
+        margin-top: 0px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-home-searchBar-legend {
+        color: gray;
+        font-weight: 200;
+        font-size: 1em;
+    }
+
+    .mobile-home-title {
+        font-size: 4em;
+        font-family: 'Inter';
+        font-weight: 200;
+        line-height: 1.2;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    .mobile-home-subtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(214, 214, 214);
+        font-size: 1em;
+        font-weight: 200;
+        /* Color del texto en tema oscuro */
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 425px) and (max-width: 1023px) {}
+
+/* Laptop */
+@media (min-width: 1024px) {
+
+    /*#region Mobile display none */
+    .mobile-home-input-container {
+        display: none;
+    }
+
+    /* #endregion */
+
+    /*#region Laptop styles */
+    .home-input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        margin-top: 2vw;
+        height: min-content;
+    }
+
+    .home-input {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-searchBar-container {
+        margin-top: 0px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-searchBar-legend {
+        color: gray;
+        font-weight: 200;
+        font-size: 1em;
+    }
+
+    .home-title {
+        font-size: 4em;
+        font-family: 'Inter';
+        font-weight: 200;
+        line-height: 1.2;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    .home-subtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(214, 214, 214);
+        font-size: 1em;
+        font-weight: 200;
+        /* Color del texto en tema oscuro */
+    }
+
+    /* #endregion */
 }
 
 /* #endregion */

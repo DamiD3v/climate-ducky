@@ -1,3 +1,15 @@
+/* #region Mobile none displays */
+@media (max-width: 1023px) {
+    .ducky-container {
+        display: none;
+    }
+    .ducky {
+        display: none;
+    }
+}
+
+/* #endregion */
+
 /* #region Ducky body */
 .ducky-container {
     display: flex;
