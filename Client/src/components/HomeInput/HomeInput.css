@@ -128,10 +128,12 @@
 
 /* Mobile */
 @media (max-width: 424px) {
+
     /*#region Laptop display none */
     .home-input-container {
         display: none;
     }
+
     /* #endregion */
 
     /* Mobile styles */
@@ -192,11 +194,8 @@
 
 }
 
-/* Tablet */
-@media (min-width: 425px) and (max-width: 1023px) {}
-
 /* Laptop */
-@media (min-width: 1024px) {
+@media (min-width: 424px) {
 
     /*#region Mobile display none */
     .mobile-home-input-container {

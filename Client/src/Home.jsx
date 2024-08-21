@@ -20,8 +20,8 @@ import { DuckyFlying } from './components/Animation_Elements/ExtraDuckies/DuckyF
 /* Components */
 
 /* Assets */
-import ArrowImage from './assets/down-arrow.svg';
-import mobileArrowImage from './assets/DownArrowImage.svg';
+import mobileArrowImage from './assets/down-arrow.svg';
+import ArrowImage from './assets/DownArrowImage.svg';
 import DuckyQuack from '/Sounds/DuckyQuack.wav'
 /* Assets */
 
@@ -103,37 +103,30 @@ const Home = () => {
     });
   };
 
-  /*   useEffect(() => {
+    useEffect(() => {
       if (!data) {
         playDuckySound(); // Play the sound when the component mounts
       }
       return () => {
         duckySound.stop(); // Stop the sound when the component unmounts
       };
-    }, [data, duckySound]); */
+    }, [data, duckySound]); 
 
   /* Scroll after fetching effect */
   useEffect(() => {
     if (data) {
-      scroller.scrollTo('cityName', {
-        smooth: true,
-        duration: 2000,
-        delay: 3,
-        offset: -60,
-      })
-    }
-  }, [data])
-  useEffect(() => {
-    if (data) {
-      scroller.scrollTo('mobile-cityName', {
-        smooth: true,
-        duration: 2000,
-        delay: 3,
-        offset: -200,
-      })
-    }
-  }, [data])
+      const isMobile = window.innerWidth <= 1023; // Define el límite para considerar que es móvil
+      const target = isMobile ? 'mobile-cityName' : 'cityName';
+      const offset = isMobile ? -200 : -60;
 
+      scroller.scrollTo(target, {
+        smooth: true,
+        duration: 2000,
+        delay: 3,
+        offset: offset,
+      });
+    }
+  }, [data]);
 
 
   return (
