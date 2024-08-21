@@ -4,6 +4,10 @@
     .bottom-clouds-component-container {
         display: none;
     }
+
+    .mobile-bottom-clouds-component-container {
+       overflow-x: hidden;
+    }
 }
 
 /* Tablet */

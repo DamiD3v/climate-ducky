@@ -1,5 +1,82 @@
-/* #region Footer */
+/*#region Mobile */
+@media (max-width: 424px) {
+    .mobile-footer-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background-color: rgb(15, 15, 15);
+        width: 100%;
+        height: 20rem;
+        font-size: 1rem;
+        margin-top: -8.9rem;
+        padding-top: 1rem;
+    }
 
+    .mobile-footer-iconTitle-container {
+        margin-top: 0.3rem;
+        display: flex;
+        align-items: center;
+        margin-left: 0rem;
+        font-size: 1.5rem;
+    }
+
+    .ducky-footer-logo-icon {
+        width: 6rem;
+        margin-top: 1rem;
+    }
+
+    .mobile-footer-title {
+        margin-left: 0rem;
+    }
+
+    .mobile-footer-credits {
+        margin-top: 1rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .share {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    .github-icon {
+        color: white;
+        width: 2.3rem;
+    }
+
+    .henry-button {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .henryIcon {
+        width: 3rem;
+    }
+
+    .linkedIn-icon {
+        color: white;
+        width: 3rem;
+    }
+
+    .mobile-footer-division-line {
+        border: none;
+        border-top: 1px solid #ccc;
+        height: 1px;
+        width: 90%;
+        margin-bottom: 1.5  rem;
+    }
+
+}
+
+/*#endregion  */
+
+/* #region Footer */
 .footer-container {
     position: absolute;
     display: flex;
