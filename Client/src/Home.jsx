@@ -21,6 +21,7 @@ import { DuckyFlying } from './components/Animation_Elements/ExtraDuckies/DuckyF
 
 /* Assets */
 import ArrowImage from './assets/down-arrow.svg';
+import mobileArrowImage from './assets/DownArrowImage.svg';
 import DuckyQuack from '/Sounds/DuckyQuack.wav'
 /* Assets */
 
@@ -407,7 +408,7 @@ const Home = () => {
           {/* City search bar mobile version*/}
           <HomeInput mobile onCityChange={handleCityChange} />
           {data && <button className='mobile-scroll-arrow-button' onClick={mobileHandleScrollArrow}>
-            <img className='mobile-scroll-arrow-image' src={ArrowImage} alt='Scroll Down Arrow' />
+            <img className='mobile-scroll-arrow-image' src={mobileArrowImage} alt='Scroll Down Arrow' />
           </button>}
 
           {/* Bottom clouds desktop version*/}
