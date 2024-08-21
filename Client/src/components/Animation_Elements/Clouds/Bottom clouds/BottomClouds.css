@@ -9,15 +9,8 @@
        overflow-x: hidden;
     }
 }
-
-/* Tablet */
-@media (min-width: 425px) and (max-width: 1023px) {
-    .bottom-clouds-component-container {
-        display: none;
-    }
-}
 /* Laptop */
-@media (min-width: 1024px) {
+@media (min-width: 424px) {
     .mobile-bottom-clouds-component-container {
         display: none;
     }
