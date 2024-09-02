@@ -1,6 +1,6 @@
 /* #region Media queries */
 /* Mobile */
-@media (max-width: 424px) {
+@media (max-width: 431px) {
 
     /*#region Laptop display none */
     .input-wrapper {
@@ -93,7 +93,7 @@
 
 
 /* Laptop */
-@media (min-width: 424px) {
+@media (min-width: 432px) {
 
 
     .input-wrapper {
