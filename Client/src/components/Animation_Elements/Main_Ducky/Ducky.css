@@ -1,5 +1,5 @@
 /* #region Mobile none displays */
-@media (max-width: 423px) {
+@media (max-width: 431px) {
     .ducky-container {
         display: none;
     }

@@ -1,5 +1,5 @@
 /*#region Mobile */
-@media (max-width: 423px) {
+@media (max-width: 431px) {
     .mobile-footer-container {
         position: relative;
         display: flex;
@@ -77,7 +77,7 @@
 /*#endregion  */
 
 /* #region Footer */
-@media (min-width: 424px) {
+@media (min-width: 432px) {
 
     .footer-container {
         position: absolute;
@@ -116,7 +116,7 @@
 /* #endregion */
 
 /* #region Media queries */
-@media (max-width: 423px) {
+@media (max-width: 431px) {
     .footer-container {
         display: none;
     }

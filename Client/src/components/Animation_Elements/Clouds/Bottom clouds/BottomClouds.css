@@ -1,6 +1,6 @@
 /* Mobile */
 
-@media (max-width: 424px) {
+@media (max-width: 431px) {
     .bottom-clouds-component-container {
         display: none;
     }
@@ -10,7 +10,7 @@
     }
 }
 /* Laptop */
-@media (min-width: 424px) {
+@media (min-width: 432px) {
     .mobile-bottom-clouds-component-container {
         display: none;
     }

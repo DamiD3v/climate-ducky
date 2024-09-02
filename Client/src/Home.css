@@ -1,5 +1,5 @@
 /* Mobile */
-@media (max-width: 423px) {
+@media (max-width: 431px) {
 
     /* #region Laptop none displays */
     .header-upperElements-grid-container {
@@ -218,7 +218,7 @@
 
 
 /* Laptop */
-@media (min-width: 424px) {
+@media (min-width: 432px) {
 
     /* #region Home containers */
     .home-header {

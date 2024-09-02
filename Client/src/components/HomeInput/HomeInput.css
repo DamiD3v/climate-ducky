@@ -127,7 +127,7 @@
 /*#region Nuevo css por media queries */
 
 /* Mobile */
-@media (max-width: 424px) {
+@media (max-width: 431px) {
 
     /*#region Laptop display none */
     .home-input-container {
@@ -195,7 +195,7 @@
 }
 
 /* Laptop */
-@media (min-width: 424px) {
+@media (min-width: 432px) {
 
     /*#region Mobile display none */
     .mobile-home-input-container {
