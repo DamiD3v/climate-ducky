@@ -90,6 +90,7 @@
         height: 8vw;
         font-size: 1.2vw;
         padding-bottom: 1rem;
+        padding-top: 0.5rem;
         color: white;
     }
 
@@ -110,7 +111,74 @@
 
     .footer-credits {
         margin-right: 4vw;
+        margin-left: -4vw;
     }
+
+    .portfolio-link-text {
+        font-weight: bold;
+        color: #bd43ff;
+    }
+    .portfolio-link-text:hover {
+        color: #d78dff;
+    }
+
+    .desktop-share {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0rem;
+        gap: 2vw;
+    }
+
+    .github-icon-container {
+        background-color: none;
+    }
+
+    .github-icon {
+        color: #9500e4;
+        width: 2.8vw;
+    }
+
+    .github-icon:hover {
+        filter: drop-shadow(0vw 0.2vw 1.2rem rgb(186, 58, 255))
+    }
+
+    .henry-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0vw;
+        padding: 0vw;
+        width: 2.5vw;
+        height: 2.6vw;
+    }
+
+    .henry-button:hover {
+        box-shadow: 0vw 0vw 2.5vw #c5c504;
+    }
+
+    .henryIcon {
+        width: 2.9vw;
+        height: 2.9vw;
+        border-radius: 2px;
+    }
+
+    .linkedIn-icon-container {
+        width: min-content;
+        height: min-content;
+    }
+
+    .linkedIn-icon {
+        color: #0c64c4;
+        width: 4vw;
+        /* margin-left: 1rem; */
+    }
+
+    .linkedIn-icon:hover {
+        filter: drop-shadow(0vw 0vw 1vw rgb(0, 170, 255))
+    }
+
 }
 
 /* #endregion */
