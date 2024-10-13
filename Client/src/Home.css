@@ -80,6 +80,7 @@
         display: flex;
         justify-content: center;
         margin-top: -1rem;
+        margin-bottom: 220px;
     }
 
     .mobile-home-main-title {
@@ -96,7 +97,7 @@
     .mobile-ducky {
         display: inline-block;
         position: absolute;
-        top: 17.5%;
+        top: 18.5%;
         left: 25%;
     }
 
@@ -199,6 +200,11 @@
         border-radius: 7%;
         filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.558));
         background-color: transparent;
+        transition: ease-in-out;
+    }
+    .mobile-scroll-arrow-button:active {
+        transform: scale(0.9);
+        transition: ease-in-out;
     }
 
     .mobile-scroll-arrow-image {
@@ -213,24 +219,16 @@
     /* #endregion */
 
     /* #region rainbow loader */
-   /*  .mobile-home-weather-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 25vw;
-        height: 30vw;
-        width: 40vw;
-    } */
     
     .mobile-loader {
         aspect-ratio: 3/4;
         overflow: hidden;
         position: absolute;
-        top: 88vw;
-        left: 27.5vw;
-        width: 47vw;
-        height: 25vw;
-        border-radius: 100vw 100vw 0 0;
+        top: 390px;
+        left: 110px;
+        width: 180px;
+        height: 90px;
+        border-radius: 100px 100px 0 0;
         z-index: -10;
     }
 
@@ -269,7 +267,7 @@
 
 
 /* Laptop */
-@media (min-width: 432px) {
+@media (min-width: 431px) {
 
     /* #region Home containers */
     .home-header {

@@ -3,9 +3,78 @@
     .ducky-container {
         display: none;
     }
+
     .ducky {
         display: none;
     }
+
+    /* #region Ducky body */
+    .mobile-ducky-container {
+        display: flex;
+        position: static;
+        top: 82px;
+        left: 27px;
+        z-index: 2;
+    }
+
+    .mobile-ducky {
+        position: static;
+        z-index: 2;
+    }
+
+    /* .mobile-ducky-body {
+        
+    } */
+    /* #endregion */
+
+    /* #region Ducky tails */
+
+    /* #region Ducky tail */
+    .mobile-ducky-tail-container {
+        position: static;
+        z-index: -1;
+    }
+
+    .mobile-ducky-tail {
+        position: absolute;
+        top: 3.8vw;
+        left: 6.1vw;
+        z-index: -1;
+    }
+
+    /* #endregion */
+
+    /* #region Ducky tip tail */
+    .mobile-ducky-tip-tail-container {
+        position: static;
+        z-index: -2;
+    }
+
+    .mobile-ducky-tip-tail {
+        position: absolute;
+        top: 3.6vw;
+        left: 8.1vw;
+        z-index: -2;
+    }
+
+    /* #endregion */
+
+    /* #endregion */
+
+    /* #region Ducky eye */
+    .mobile-ducky-eye-container {
+        position: static;
+    }
+
+    .mobile-ducky-eye {
+        position: absolute;
+        top: 0.913vw;
+        left: 3.17vw;
+    }
+
+    /* #endregion */
+
+    /* #region Ducky wings */
 }
 
 /* #endregion */

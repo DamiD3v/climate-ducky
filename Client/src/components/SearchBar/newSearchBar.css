@@ -16,12 +16,12 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .mobile-input-wrapper input {
-        position: absolute;
-        top: 37.7rem;
+        position: relative;
+        /* top: 37.7rem; */
         width: 21rem;
         margin-left: 1rem;
         margin-right: 1rem;
