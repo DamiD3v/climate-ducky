@@ -52,7 +52,7 @@ const Home = () => {
         setTimeout(async () => {
           const data = await getCityWeather(city);
           resolve(data);
-        }, 1000); // 2-second delay
+        }, 500); // 6-second delay
       });
     },
     enabled: !!city,
@@ -103,14 +103,14 @@ const Home = () => {
     });
   };
 
-    useEffect(() => {
-      if (!data) {
-        playDuckySound(); // Play the sound when the component mounts
-      }
-      return () => {
-        duckySound.stop(); // Stop the sound when the component unmounts
-      };
-    }, [data, duckySound]); 
+  useEffect(() => {
+    if (!data) {
+      playDuckySound(); // Play the sound when the component mounts
+    }
+    return () => {
+      duckySound.stop(); // Stop the sound when the component unmounts
+    };
+  }, [data, duckySound]);
 
   /* Scroll after fetching effect */
   useEffect(() => {
@@ -557,7 +557,7 @@ const Home = () => {
             {isLoading || isRefetching ? (
               <>
                 <div className="mobile-loader"></div>
-                <div className='mobile-loading'></div>
+                {/* <div className='mobile-loading'></div> */}
               </>
             ) : (
               <React.Fragment>
