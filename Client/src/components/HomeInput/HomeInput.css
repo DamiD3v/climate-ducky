@@ -195,7 +195,7 @@
 }
 
 /* Laptop */
-@media (min-width: 432px) {
+@media (min-width: 431px) {
 
     /*#region Mobile display none */
     .mobile-home-input-container {
