@@ -1,7 +1,7 @@
 /*#region Mobile */
 .mobile-weather-card-container {
     position: absolute;
-    top: 70rem;
+    bottom: 120vw;
     left: 10%;
     width: 80%;
     height: fit-content;
