@@ -553,7 +553,7 @@ const Home = () => {
           </div>
 
           {/* City weather card mobile version */}
-          <div role='section' className='mobile-home-weather-container'>
+          <div role='section' className='mobile-home-weather-card-container'>
             {isLoading || isRefetching ? (
               <>
                 <div className="mobile-loader"></div>
