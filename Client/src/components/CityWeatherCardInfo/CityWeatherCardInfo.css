@@ -23,6 +23,7 @@
     margin-bottom: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    text-align: center;
 }
 
 .mobile-weatherInfo-icon {
@@ -92,6 +93,7 @@ strong {
     margin-bottom: 2vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    text-align: center;
 }
 
 .weatherInfo-icon {

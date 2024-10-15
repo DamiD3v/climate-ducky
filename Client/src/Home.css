@@ -223,10 +223,10 @@
         aspect-ratio: 3/4;
         overflow: hidden;
         position: absolute;
-        top: 390px;
-        left: 110px;
-        width: 180px;
-        height: 90px;
+        top: 22.1%;
+        left: 26.8%;
+        width: 50%;
+        height: 5.5%;
         border-radius: 100px 100px 0 0;
         z-index: -10;
     }
