@@ -36,11 +36,11 @@ const CityWeatherCardInfo = ({ data, mobile }) => {
                     </div>
                     <div className="mobile-weatherInfo-container-icon">
                         <h3 className="mobile-weatherInfo-title">Weather details</h3>
-                        <p className="mobile-weatherInfo">{weatherDescription} <img src={`http://openweathermap.org/img/wn/${weatherIcon}@2x.png`} alt="Weather Icon" className="weatherInfo-icon" /></p>
+                        <p className="mobile-weatherInfo">{weatherDescription} <img src={`http://openweathermap.org/img/wn/${weatherIcon}@2x.png`} alt="Weather Icon" className="mobile-weatherInfo-icon" /></p>
                     </div>
                     <div className="mobile-weatherInfo-container">
                         <h3 className="mobile-weatherInfo-title">Wind Speed</h3>
-                        <p className="mobile-weatherInfo">{windSpeedKmh} km/h <img className="windFlagIcon" src={windFlag} /></p>
+                        <p className="mobile-weatherInfo">{windSpeedKmh} km/h <img className="mobile-windFlagIcon" src={windFlag} /></p>
                     </div>
                 </div >
             ) : (
